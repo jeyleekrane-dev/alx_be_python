@@ -42,4 +42,4 @@ elif time_bound == "yes" and priority == "low":
 
 
 # Print the customized reminder
-print(f"\nReminder: {Reminder}")
+print(f"Reminder: {Reminder}")
