@@ -23,7 +23,7 @@ match priority:
     case _:
         # Handle cases where the priority input is not recognized
         Reminder = f"'{task}' has an unrecognized priority level."
-        print("Warning: Please enter 'high', 'medium', or 'low' for priority.")
+        # print("Warning: Please enter 'high', 'medium', or 'low' for priority.")
 
 # Check if the task is time-bound and modify the reminder accordingly
 # This condition applies the "immediate attention" message only if time_bound is 'yes'
