@@ -10,26 +10,26 @@ priority = input("Priority (high/medium/low): ").lower()
 time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 # Initialize the base reminder message
-reminder_message = ""
+reminder = ""
 
 # Use a match-case statement to handle different priority levels
 match priority:
     case "high":
-        reminder_message = f"'{task}' is a high priority task"
+        reminder = f"'{task}' is a high priority task"
     case "medium":
-        reminder_message = f"'{task}' is a medium priority task"
+        reminder = f"'{task}' is a medium priority task"
     case "low":
-        reminder_message = f"'{task}' is a low priority task. Consider completing it when you have free time."
+        reminder = f"'{task}' is a low priority task. Consider completing it when you have free time."
     case _:
         # Handle cases where the priority input is not recognized
-        reminder_message = f"'{task}' has an unrecognized priority level."
+        reminder = f"'{task}' has an unrecognized priority level."
         print("Warning: Please enter 'high', 'medium', or 'low' for priority.")
 
 # Check if the task is time-bound and modify the reminder accordingly
 # This condition applies the "immediate attention" message only if time_bound is 'yes'
 # and the priority is not 'low' (as low priority has its own specific message).
 if time_bound == "yes" and priority in ["high", "medium"]:
-    reminder_message += " that requires immediate attention today!"
+    reminder += " that requires immediate attention today!"
 elif time_bound == "yes" and priority == "low":
     # If it's low priority and time-bound, the "immediate attention" might contradict
     # the "consider completing when you have free time" message.
@@ -42,4 +42,4 @@ elif time_bound == "yes" and priority == "low":
 
 
 # Print the customized reminder
-print(f"\nReminder: {reminder_message}")
+print(f"\nReminder: {reminder}")
