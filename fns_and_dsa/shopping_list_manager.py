@@ -2,7 +2,7 @@
 
 def display_menu():
     # CHANGE THIS LINE to exactly match the checker's expectation
-    print(f" \n Shopping List Manager")  # Changed to an f-string
+    print(f"Shopping List Manager")  # Changed to an f-string
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
