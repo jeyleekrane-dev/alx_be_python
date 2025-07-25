@@ -9,14 +9,14 @@ def display_menu():
 
 
 def main():
-    shopping_list = []
+    shopping_list = []  # This line defines the list
     while True:
-        display_menu()
-        choice = input("Enter your choice: ")
+        display_menu()  # This line calls display_menu
+        choice = input("Enter your choice: ")  # This is the choice input
 
         if choice == '1':
             item = input("Enter the item to add: ").strip()
-            if item:  # Ensure item is not empty
+            if item:
                 shopping_list.append(item)
                 print(f"'{item}' added to the list.")
             else:
