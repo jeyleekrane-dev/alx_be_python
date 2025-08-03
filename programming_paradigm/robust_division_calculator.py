@@ -27,7 +27,7 @@ def safe_divide(numerator, denominator):
 
     except ValueError:
         # Catch errors where the input cannot be converted to a number
-        return "Error: Invalid input. Both numerator and denominator must be numeric."
+        return "Error: Please enter numeric values only."
     except ZeroDivisionError:
         # Catch the specific case of division by zero
         return "Error: Cannot divide by zero."
