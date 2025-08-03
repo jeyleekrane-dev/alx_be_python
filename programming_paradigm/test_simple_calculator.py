@@ -18,7 +18,7 @@ class TestSimpleCalculator(unittest.TestCase):
         """
         self.calc = SimpleCalculator()
 
-    def test_add(self):
+    def test_addition(self):
         """
         Test the add method with various inputs, including positive,
         negative, and zero numbers.
@@ -29,7 +29,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(0, 0), 0)
         self.assertEqual(self.calc.add(10.5, 2.5), 13.0)
 
-    def test_subtract(self):
+    def test_subtraction(self):
         """
         Test the subtract method with various inputs.
         """
