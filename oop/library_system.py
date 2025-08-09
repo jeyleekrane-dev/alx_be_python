@@ -106,7 +106,5 @@ class Library:
         Prints the details of each book in the library by relying on
         the __str__ method of each book object.
         """
-        print("\n--- Listing all books in the library ---")
         for book in self.books:
             print(book)
-        print("--- End of list ---")
