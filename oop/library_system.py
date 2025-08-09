@@ -100,7 +100,6 @@ class Library:
             book (Book): An instance of a book to add.
         """
         self.books.append(book)
-        print(f"Added '{book.title}' to the library.")
 
     def list_books(self):
         """
